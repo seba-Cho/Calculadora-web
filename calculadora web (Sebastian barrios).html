@@ -1,0 +1,21 @@
+<html>
+<body>
+<h3>Calculadora Web</h3>
+<script>
+function calculadora() {
+	let operacion = prompt("ingrese una operacion");
+	let resultado = eval(operacion);
+
+	alert("El resultado es: " + resultado);
+}
+
+let decision = true
+
+do {
+	calculadora();
+	decision = confirm("Quieres probar con otra operación")
+} while(decision==true);
+
+</script>
+</body>
+</html>
